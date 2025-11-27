@@ -1,29 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <title>Tennis Bulk</title>
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BULK Tennis</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="menu">
+    <h1>BULK Tennis</h1>
+    <button id="startBtn">START</button>
+  </div>
 
-    <!-- Main Menu -->
-    <div id="menu">
-        <h1 class="title">Tennis Bulk</h1>
-        <button id="startBtn">Start Game</button>
-    </div>
+  <canvas id="gameCanvas" width="900" height="500"></canvas>
+  <button id="restart">Try again</button>
+  <footer>by marchesssik</footer>
 
-    <!-- Game Canvas -->
-    <canvas id="gameCanvas" width="600" height="900"></canvas>
-
-    <!-- Footer -->
-    <footer>by marchesssik</footer>
-
-    <!-- Game Logic -->
-    <script src="game.js"></script>
+  <script src="game.js"></script>
 </body>
 </html>
-
