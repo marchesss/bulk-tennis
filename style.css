@@ -1,58 +1,50 @@
 body {
   margin: 0;
-  background: #0a0f1a;
+  background: #0b0f1a;
   font-family: Arial, sans-serif;
-  overflow: hidden;
   color: #fff;
-  text-align: center;
+  overflow: hidden;
 }
-
 canvas {
   display: none;
   margin: 0 auto;
-  background: linear-gradient(180deg, #0e1b33, #05101f);
-  box-shadow: 0 0 30px rgba(0,150,255,0.2);
+  border-bottom: 4px solid #4af;
+  border-top: 4px solid #4af;
 }
-
-.menu {
+#menu {
   position: absolute;
-  top: 50%; left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  padding: 30px 40px;
-  background: rgba(0,0,0,0.55);
-  border-radius: 12px;
-  backdrop-filter: blur(6px);
+  text-align: center;
 }
-
-.btn {
-  margin-top: 20px;
-  padding: 14px 28px;
+#menu h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: #4af;
+}
+#menu button, #restart {
+  padding: 14px 26px;
   border: none;
-  font-size: 20px;
-  font-weight: bold;
-  color: #000;
-  background: #4af;
   border-radius: 10px;
+  background: #4af;
+  color: #000;
+  font-size: 20px;
   cursor: pointer;
 }
-.btn:hover { opacity: 0.85; }
-
-.result {
+#restart {
   position: absolute;
-  top: 50%; left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  padding: 25px 40px;
-  background: rgba(0,0,0,0.5);
-  border-radius: 14px;
-  backdrop-filter: blur(6px);
+  display: none;
 }
-
-.hidden { display: none; }
-
 footer {
-  position: fixed;
-  bottom: 8px;
+  position: absolute;
+  bottom: 10px;
   width: 100%;
-  opacity: 0.5;
+  text-align: center;
+  color: #fff;
   font-size: 14px;
+  opacity: 0.7;
 }
