@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Tennis Bulk</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="menu">
+  <div id="menu" class="menu">
     <h1>Tennis Bulk</h1>
-    <button id="startBtn">START</button>
+    <p class="subtitle">Arcade tennis vs. a robot. First to 3 wins.</p>
+    <div class="btns">
+      <button id="startBtn" class="btn">START</button>
+      <button id="muteBtn" class="btn small">Mute</button>
+    </div>
   </div>
 
-  <canvas id="gameCanvas" width="900" height="500"></canvas>
-  <button id="restart">Попробовать снова</button>
-  <footer>by nantenka</footer>
+  <canvas id="gameCanvas" width="900" height="500" role="img" aria-label="Tennis Bulk game"></canvas>
+
+  <div id="overlay" class="overlay hidden">
+    <div class="panel">
+      <h2 id="resultText">You win!</h2>
+      <button id="retryBtn" class="btn">Play again</button>
+      <button id="menuBtn" class="btn small">Back to menu</button>
+    </div>
+  </div>
+
+  <footer>by marchesssik</footer>
 
   <script src="game.js"></script>
 </body>
